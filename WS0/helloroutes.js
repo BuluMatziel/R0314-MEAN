@@ -1,17 +1,15 @@
 var http = require("http");
-http.createServer(function(request, response) {
-
-    if (request.url === '/helloworld'){
-
-        response.writeHead(200, {'Content-Type': 'text/html'});
-        response.end('Hello World in html');
-        } 
-        else if (request.url === '/homepage'){
-            response.end('HOMEPAGE');
-        } else if (request.url === '/table'){
-            response.writeHead(200, {'Content-Type': 'text/html'});
-            response.end(
-                `<style>
+http
+  .createServer(function(request, response) {
+    if (request.url === "/helloworld") {
+      response.writeHead(200, { "Content-Type": "text/html" });
+      response.end("Hello Wosrld in html");
+    } else if (request.url === "/homepage") {
+      response.end("HOMEPAGE");
+    } else if (request.url === "/table") {
+      response.writeHead(200, { "Content-Type": "text/html" });
+      response.end(
+        `<style>
                 table, th, td {
                   border: 1px solid black;
                   border-collapse: collapse;
@@ -27,16 +25,16 @@ http.createServer(function(request, response) {
                 <td>Matias</td>
                 <td>Kohanevic</td>
                 <td><a href="url">https://github.com/BuluMatziel/</a></td>
-            </table>`)
-        } else {
-            response.writeHead(200, {'Content-Type': 'text/plain'});
+            </table>`
+      );
+    } else {
+      response.writeHead(200, { "Content-Type": "text/plain" });
 
-            // Send the response body as "Hello World"
-            response.end('Hello World\n');
-        }
-        
-
-}).listen(8081);
+      // Send the response body as "Hello World"
+      response.end("Hello World\n");
+    }
+  })
+  .listen(8081);
 
 // Console will print the message
-console.log('Server running at http://127.0.0.1.8081/');
+console.log("Server running at http://127.0.0.1.8081/");

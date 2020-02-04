@@ -5,7 +5,7 @@ http
     // Content Type: text/plain
     response.writeHead(200, { "Content-Type": "text/html" });
 
-    response.write("<h1>What's up woorld?</h1><br>");
+    response.write("<h1>What's up world?</h1><br>");
     // Making a table
     // Use `<code here>` to write multiple lines of html
     response.write(

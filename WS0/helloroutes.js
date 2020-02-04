@@ -3,7 +3,7 @@ http
   .createServer(function(request, response) {
     if (request.url === "/helloworld") {
       response.writeHead(200, { "Content-Type": "text/html" });
-      response.end("Hello Wosrld in html");
+      response.end("Hello World in html");
     } else if (request.url === "/homepage") {
       response.end("HOMEPAGE");
     } else if (request.url === "/table") {

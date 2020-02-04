@@ -1,14 +1,15 @@
 var http = require("http");
-http.createServer(function(request, response) {
+http
+  .createServer(function(request, response) {
     // Send the HTTP header. HTTP Status: 200 = OK
     // Content Type: text/plain
-    response.writeHead(200, {'Content-Type': 'text/html'});
+    response.writeHead(200, { "Content-Type": "text/html" });
 
-    response.write("<h1>What's up world?</h1><br>");
+    response.write("<h1>What's up woorld?</h1><br>");
     // Making a table
-    // Use `<code here>` to write multiple lines of html 
+    // Use `<code here>` to write multiple lines of html
     response.write(
-    `<style>
+      `<style>
     table, th, td {
       border: 1px solid black;
       border-collapse: collapse;
@@ -35,10 +36,12 @@ http.createServer(function(request, response) {
     <td><a href="url">https://github.com/</a></td>
     <td>80</td>
   </tr>
-</table>`)
+</table>`
+    );
     // Send the response body as "Hello World"
-    response.end('Hello World\n');
-}).listen(8081);
+    response.end("Hello World\n");
+  })
+  .listen(8081);
 
 // Console will print the message
-console.log('Server running at http://127.0.0.1.8081/');
+console.log("Server running at http://127.0.0.1.8081/");

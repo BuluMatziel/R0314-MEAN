@@ -7,12 +7,14 @@ var jsonContent = JSON.parse(contents);
 
 http.createServer(function (request, response) {
     response.writeHead(200, { "Content-Type": "text/html" });
+    // Basic contents of a HTML table
     response.write("<table border='1'>");
     response.write("<th>Name</th>");
     response.write("<th>Age</th>");
     response.write("<th>Company</th>");
     response.write("<th>Address</th>");
     response.write("</tr>");
+    // Loop to go through all the results and add them as table contents
     for (i = 0; i < jsonContent.length; i++) {
         response.write("<tr>");
         response.write("<td>" + jsonContent[i].name + "</td>");

@@ -1,0 +1,5 @@
+The contents of this file are displayed in plain text.
+
+
+<h1>Hello world</h1> <-- see? plain text man
+

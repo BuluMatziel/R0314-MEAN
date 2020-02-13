@@ -6,7 +6,7 @@ console.log("Program started");
 fs.readFile('example.txt', results);
 
 for (var i=0; i < 15; i++){
-	console.log("Node just keeps on going whiel the file is being read...");
+	console.log("Node just keeps on going whiel the file is being reuuuuuuad...");
 	}
 	
 // Introduce a function to dela with fileread results

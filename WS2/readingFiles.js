@@ -1,3 +1,5 @@
+// Reading texts from two files
+
 var fs = require("fs");
 
 console.log("Program started");

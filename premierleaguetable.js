@@ -22,7 +22,7 @@ http.get(options, function (res) {
     res.on('end', function () {
         var results = JSON.parse(body);
 
-        // Output on browser. Taking the data needed to make a English Premier League league standings table
+        // Output on browser. Taking the data needed to make a English Premier League standings table
 
         http.createServer(function (request, response) {
             response.writeHead(200, { "Content-Type": "text/html" });

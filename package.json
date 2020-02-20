@@ -1,7 +1,7 @@
 {
     "name": "ws3",
     "version": "0.1.0",
-    "description": "A sample Node.js app in Heroku.",
+    "description": "A sample Node.js app in Heroku",
     "engines": {
         "node": "12.x"
     },

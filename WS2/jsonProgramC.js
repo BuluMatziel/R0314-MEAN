@@ -13,7 +13,6 @@ http.createServer(function (request, response) {
     response.write("<th>Age</th>");
     response.write("<th>Company</th>");
     response.write("<th>Address</th>");
-    response.write("</tr>");
     // Loop to go through all the results and add them as table contents
     for (i = 0; i < jsonContent.length; i++) {
         response.write("<tr>");

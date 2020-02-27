@@ -27,7 +27,8 @@ http.get(options, function (res) {
         http.createServer(function (request, response) {
             response.writeHead(200, { "Content-Type": "text/html" });
             response.write(
-                `<style>
+                `<meta charset="utf-8"/> 
+                <style>
                 table {border-collapse: collapse;}
                 tr {
                 border: 2px solid black;
@@ -46,14 +47,14 @@ http.get(options, function (res) {
             <tr>
                 <th>#</th>
                 <th>Joukkue</th>
-                <th>OTT</th>
-                <th>V</th>
-                <th>T</th>
-                <th>H</th>
-                <th>TM</th>
-                <th>PM</th>
-                <th>ME</th>
-                <th>PIS</th>
+                <th title = "Ottelut">OTT</th>
+                <th title = "Voitot">V</th>
+                <th title = "Tasapelit">T</th>
+                <th title = "Häviöt">H</th>
+                <th title = "Tehdyt maalit">TM</th>
+                <th title = "Päästetyt maalit">PM</th>
+                <th title = "Maaliero">ME</th>
+                <th title = "Pisteet">PIS</th>
             </tr>`);
             // Loop to go through the results and write data to our HTML table
             for (i = 0; i < results.standings[0].table.length; i++) {
